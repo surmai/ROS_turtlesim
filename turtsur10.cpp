@@ -13,6 +13,7 @@ void rotate();
 int main(int argc, char **argv)
 
 {
+	// Initiate new ROS node named "turtsur1"
 	ros::init(argc, argv, "turtsur1");
     ros::NodeHandle n;
     ros::Rate rate(1); 
@@ -21,6 +22,7 @@ int main(int argc, char **argv)
 
     for (int i = 0; i<10 && ros::ok(); i++)
     {
+	    // Time for command execution
         rate.sleep();
 
         if (i%2==0)
